@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>design</title>
+</head>
+
+<style>
+    #container {
+        max-width: 728px;
+        display: grid;
+        grid-template-rows: auto auto auto 20px;
+        gap: 10px;
+        margin: 0 auto;
+        font-family: sans-serif;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 2px solid lightgray;
+        font-size: 12px;
+        padding: 5px 5px;
+    }
+
+    #heading {
+        max-width: 500px;
+        font-size: 50px;
+        margin: 0;
+    }
+
+    #details {
+        max-width: 500px;
+        text-align: center;
+        align-self: center;
+    }
+
+    #title {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    #menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+    }
+
+    #sub {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 10px;
+        font-size: 11px;
+    }
+
+    ul li {
+        padding: 10px;
+        color: blue;
+    }
+
+    .selected {
+        background-color: blue;
+        color: white;
+        border-radius: 4px;
+    }
+
+
+
+    .content {
+        background-color: lightgray;
+        padding: 35px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    button {
+        border: none;
+        border-radius: 4px;
+        background-color: green;
+        padding: 10px;
+        color: white;
+    }
+
+    footer {
+        border-top:1px solid lightgrey;
+        font-size: 12px;
+        color: gray;
+    }
+
+    #menu a {
+        text-decoration: none;
+
+    }
+
+    #homelink {
+        color: white;
+       
+    }
+    #linkcolor{
+        color: blue;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <header>
+            <label id="title">Project name</label>
+            <ul id="menu">
+                <li class="selected"><a id="homelink" href="#">Home</a></li>
+                <li><a id="linkcolor" href="#">About</a></li>
+                <li><a id="linkcolor" href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class='content center'>
+            <h1 id="heading">Jumbotron heading</h1>
+            <p id="details">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Amet justo donec enim diam vulputate.
+            </p>
+            <button>
+                Sign up today
+            </button>
+        </div>
+        <div id="sub">
+            <div>
+                <h3>Subheading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+            </div>
+            <div>
+                <h3>Subheading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+            </div>
+            <div>
+                <h3>Subheading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+            </div>
+            <div>
+                <h3>Subheading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+            </div>
+            <div>
+                <h3>Subheading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+            </div>
+            <div>
+                <h3>Subheading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+            </div>
+        </div>
+        <footer>©️2016 Company Inc</footer>
+    </div>
+
+</body>
+
+</html>
